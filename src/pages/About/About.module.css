@@ -1,0 +1,49 @@
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+    background: rgba(138, 216, 243, 0.8);
+    background: #8be2ff;
+    color: #333;
+    height: 18rem;
+  }
+  
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .heading:hover {
+    color: #6b5b95;
+  }
+  
+  .text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  .highlight {
+    color: #462a8f;
+    font-weight: bold;
+  }
+  
+  .freelance {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+    opacity: 0.8;
+  }
+  
+
+  .emoji {
+    display: inline-block;
+    margin-right: 10px;
+  }

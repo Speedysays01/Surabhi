@@ -1,0 +1,105 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+.skills {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.slider {
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  top: 20%;
+  left: calc(50% - 150px);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: autoRun 20s linear infinite;
+  z-index: 2;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
+
+.item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(550px);
+  
+}
+
+.item img {
+  width: 5rem;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.8); /* White border with slight transparency */
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6); /* Blurred white glow effect */
+  backdrop-filter: blur(10px); /* Applies blur effect to the background */
+  border-radius: 10px; /* Optional: Rounds the corners */
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.content h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 5rem;
+  color: white;
+  position: relative;
+  bottom: 2rem;
+}
+
+.content p {
+  font-family: Poppins, sans-serif;
+  font-size: 1.2em;
+  color: white;
+}
+
+@media screen and (max-width: 1023px) {
+  .slider {
+    width: 250px;
+    height: 300px;
+    left: calc(50% - 125px);
+  }
+  .item {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(300px);
+  }
+  .content h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    width: 150px;
+    height: 200px;
+    left: calc(50% - 75px);
+  }
+  .item {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(180px);
+  }
+  .content h1 {
+    font-size: 2.5em;
+  }
+}

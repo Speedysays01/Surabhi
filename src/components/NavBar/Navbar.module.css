@@ -1,0 +1,161 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-height: 2.5rem;
+}
+
+.logoContainer {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #8be2ff;
+  user-select: none;
+  font-family: 'Chivo Mono', monospace;
+}
+
+.menuIcon {
+  margin-right: 5rem;
+  font-size: 2rem;
+  color: #4b3db9;
+  cursor: pointer;
+  display: block;
+}
+
+.navLinks {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1.5rem;
+  font-weight: 600;
+  color: #4b3db9;
+}
+
+.sidebarOpen {
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: -2rem;
+}
+
+.closeIcon {
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  color: #4b3db9;
+  margin-right: 5rem;
+}
+
+.navLink {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  list-style: none;
+  position: relative;
+  transition: color 0.3s, text-shadow 0.3s , 0.3s;
+  color: white;
+  font-weight: bold;
+ 
+
+
+     color: black;  /* Hover color */
+     text-shadow:
+     -1px -1px 0 whitesmoke,
+      1px -1px 0 whitesmoke,
+     -1px  1px 0 whitesmoke,
+      1px  1px 0 whitesmoke;
+}
+
+/* Style for regular nav links */
+.navLink {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  list-style: none;
+  position: relative;
+
+}
+
+.navLink:hover {
+  color: whitesmoke;  /* Hover color */
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+/* Style for the active link */
+.activeLink {
+  border-bottom: 2px solid white;
+  font-weight: bolder;
+}
+
+
+
+
+
+/* ✅ THIS IS THE WORKING ACTIVE LINK STYLING */
+
+
+.activeLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+ 
+
+}
+
+li {
+  list-style: none;
+  margin-left: 3rem;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+  .menuIcon {
+    display: none;
+  }
+
+  li {
+    margin-left: 0;
+  }
+
+  .navLinks {
+    position: static;
+    height: auto;
+    flex-direction: row;
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 2rem;
+    right: 0;
+    justify-content: flex-end;
+    margin-right: 10rem;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+  
+    50% {
+      scale: 1 1.1;
+    }
+  
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  .blob {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 14vmax;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: linear-gradient(to right, #d1c5ff, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.4;  /* Reduced opacity */
+    filter: blur(18px); /* Increased blur effect */
+    z-index: 1;
+}

@@ -1,0 +1,140 @@
+/* BentoGrid.module.css */
+
+.container{
+     background: linear-gradient(135deg, #4e0083 , #8be2ff);
+     margin-top: -1.5rem;
+    h2{
+    align-self: center;
+    justify-self: center;
+    padding-top: 2rem;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+}
+.gridContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,2fr);
+  padding: 1rem;
+  box-sizing: border-box;
+
+
+}
+
+
+
+.tile {
+  background: black;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px #a9e9ff90;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  transition: ease 0.3s;
+}
+
+.tile:hover {
+  box-shadow: 0 0 20px 4px #e8c6ff , 0 0 30px 10px #a9e9ff66;
+  transform: scale(1.02);
+}
+
+/* Tile placement to match reference */
+.tile1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.tile2 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.tile3 {
+  grid-column: 1 / 2;
+  grid-row: 2/ 3;
+}
+
+.tile4 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+.tile5 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.tile6 {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Text styling */
+.textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.category {
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+
+
+.subtitle {
+  font-size: 0.95rem;
+  color: rgb(209, 209, 209);
+  margin-top: -1rem;
+}
+
+.demoButton {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.big{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    img{
+        width: 40%;
+        border-radius: 1rem;
+
+    }
+
+    .textArea{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        text-align: center;
+        
+    }
+}
