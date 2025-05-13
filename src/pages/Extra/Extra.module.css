@@ -138,3 +138,51 @@
         
     }
 }
+
+
+
+
+/* BentoGrid.module.css */
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+    grid-template-rows: auto; /* Rows adjust based on content */
+  }
+
+  .tile1 {
+    grid-column: 1 / 2; /* Full-width for the first tile */
+    grid-row: auto;
+  }
+
+  .tile2 {
+    grid-column: 1 / 2; /* Full-width for the second tile */
+    grid-row: auto;
+  }
+
+  .tile3 {
+    grid-column: 1 / 2; /* Full-width for the third tile */
+    grid-row: auto;
+  }
+
+  .tile4 {
+    grid-column: 1 / 2; /* Full-width for the fourth tile */
+    grid-row: auto;
+  }
+
+  .tile5 {
+    grid-column: 1 / 2; /* Full-width for the fifth tile */
+    grid-row: auto;
+  }
+
+  .tile6 {
+    grid-column: 1 / 2; /* Full-width for the sixth tile */
+    grid-row: auto;
+  }
+
+  /* Optional: Modify the image size to make it responsive for mobile */
+  .big img {
+    width: 40%; /* Smaller image size on mobile */
+  }
+}

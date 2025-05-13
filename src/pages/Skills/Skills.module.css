@@ -91,6 +91,10 @@
 }
 
 @media screen and (max-width: 767px) {
+
+  .skills{
+    height: 50vh;
+  }
   .slider {
     width: 150px;
     height: 200px;
@@ -101,5 +105,8 @@
   }
   .content h1 {
     font-size: 2.5em;
+    justify-self: flex-start;
+    position: absolute;
+    margin-bottom: 1rem;
   }
 }

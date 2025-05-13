@@ -82,7 +82,7 @@ const Home = () => {
           </motion.div>
         </div>
       </main>
-      <MarqueeStrip />
+      <MarqueeStrip className={styles.marquee}/>
     </div>
   );
 };

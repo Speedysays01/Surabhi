@@ -62,6 +62,7 @@
 .timelineDot {
   position: absolute;
   left: 0;
+  bottom: 0.5rem;
   width: 1.5rem;
   height: 1.5rem;
   background: #8be2ff;
@@ -75,10 +76,11 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: whitesmoke;
 }
 
 .company {
-  color: #c3baff;
+  color: black;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
@@ -92,10 +94,53 @@
 .points {
   list-style: disc;
   padding-left: 1rem;
-  color: #dbeaff;
+  color: #000000;
   font-size: 0.875rem;
+  font-weight: bolder;
 }
 
 .points li {
   margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline {
+    margin-left: 0;
+    padding-left: 1.5rem;
+  }
+
+  .timeline::before {
+    left: 0.25rem;
+  }
+
+  .glassCard {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .points {
+    font-size: 0.8rem;
+    
+  }
+
+  .timelineDot {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #4e0083;
+    bottom: 0.25rem;
+  }
 }

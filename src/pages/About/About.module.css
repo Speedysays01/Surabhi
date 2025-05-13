@@ -47,3 +47,22 @@
     display: inline-block;
     margin-right: 10px;
   }
+
+  @media(max-width: 768px) {
+    .aboutSection {
+      padding: 2rem;
+      height: auto;
+    }
+  
+    .heading {
+      font-size: 2rem;
+    }
+  
+    .text {
+      font-size: 1rem;
+    }
+  
+    .freelance {
+      font-size: 0.9rem;
+    }
+  }
