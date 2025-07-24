@@ -2,6 +2,16 @@ import React, { useEffect } from "react";
 import styles from "./Experience.module.css";
 
 const experiences = [
+    {
+    title: "Freelance Developer",
+    company: "Production Frenzy",
+    period: "May 2025 - July 2025",
+    points: [
+      "Working as a freelance developer for a digital marketing company.",
+      "Creating Digital portfolios and E-commerce websites",
+      "Ensuring SEO optimization and responsive design.",
+    ],
+  },
   {
     title: "Full stack developer (Freelance)",
     company: "SuccessMarathi",
@@ -32,16 +42,7 @@ const experiences = [
       "Collaborated with developers from around the world.",
     ],
   },
-  {
-    title: "Intern Developer",
-    company: "Zidio development",
-    period: "May 2024 - Aug 2024",
-    points: [
-      "Worked on a team to develop web applications.",
-      "Participated in code reviews and team meetings.",
-      "Gained experince in git and collaborative development.",
-    ],
-  },
+
   {
     title: "Technical Content Creator ",
     company: "DevOpsOnSteroids",

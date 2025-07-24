@@ -7,6 +7,7 @@ import imgnest from './imagenest.png';
 import gelato from './gelato.png';
 import resumeHero from './resumehero.png';
 import success from './successMarathi.png'
+import prod from './prod.png'
 
 const projects = [
   {
@@ -45,11 +46,11 @@ const projects = [
     live: 'https://successmarathi.vercel.app/',
   },
   {
-    title: 'Cyborg-official',
-    description: 'Landing page for technical club of Electronics department',
-    image: cyb,
-    github: 'https://github.com/Speedysays01/Cyborg',
-    live: 'https://cyborg-peach.vercel.app/',
+    title: 'Production Frenzy',
+    description: 'Digital Portdolio for a Digital marketing comapny',
+    image: prod,
+    github: 'https://github.com/ProductionFrenzy/ProductionFrenzy',
+    live: 'https://productionfrenzy.vercel.app/',
   },
 ];
 
